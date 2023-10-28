@@ -34,8 +34,51 @@
           </div>
         </div>
       </nav>  
-
+      
     <main class="container mt-5">
+      <div class="d-flex justify-content-center mb-5">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addProduct">Add Product</button>
+      </div>
+      <!-- Modal -->
+    <div class="modal fade" id="addProduct" tabindex="-1" aria-labelledby="addProductLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addProductLabel">Add a product</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Modal Content -->
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Product Name</label>
+            </div>
+            
+            <div class="input-group mb-3">
+              <span class="input-group-text">Description</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+            </div>
+
+            <div class="">
+              <label for="formFile" class="form-label">Product Image</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Add Product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
       <div class="container d-flex justify-content-center" style="gap: 15px; flex-wrap: wrap;">
         <div class="card" style="width: 400px;">
           <img class="card-img-top" src="https://down-ph.img.susercontent.com/file/5eccb326acfaaca2ed92d1b3e18aba7e" alt="Card image cap">
