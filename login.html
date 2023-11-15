@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./login.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -120,37 +121,37 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="floatingInput"
+                    id="txtModalEmail"
                     placeholder="name@example.com"
                   />
-                  <label for="floatingInput">Email address</label>
+                  <label for="txtModalEmail">Email address</label>
                 </div>
                 <div class="form-floating">
                   <input
                     type="password"
                     class="form-control"
-                    id="floatingPassword"
+                    id="txtModalPassword"
                     placeholder="Password"
                   />
-                  <label for="floatingPassword">Password</label>
+                  <label for="txtModalPassword">Password</label>
                 </div>
                 <div class="form-floating mt-3">
                   <input
                     type="password"
                     class="form-control"
-                    id="floatingPassword"
+                    id="txtModalConfirmPassword"
                     placeholder="Password"
                   />
-                  <label for="floatingPassword">Confirm Password</label>
+                  <label for="txtModalConfirmPassword">Confirm Password</label>
                 </div>
                 <div class="form-floating mt-3">
                   <input
                     type="text"
                     class="form-control"
-                    id="floatingPassword"
+                    id="txtModalName"
                     placeholder="Name"
                   />
-                  <label for="floatingName">Name</label>
+                  <label for="txtModalName">Name</label>
                 </div>
                 <div class="container mt-2 row">
                   <h5 class="col-12">Gender</h5>
@@ -158,8 +159,9 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name="flexRadioDefault"
+                      name="radioGender"
                       id="flexRadioDefault1"
+                      value="rather"
                     />
                     <label class="form-check-label" for="flexRadioDefault1">
                       Rather not say
@@ -169,8 +171,9 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name="flexRadioDefault"
+                      name="radioGender"
                       id="flexRadioDefault2"
+                      value="male"
                       checked
                     />
                     <label class="form-check-label" for="flexRadioDefault1">
@@ -181,7 +184,8 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name="flexRadioDefault"
+                      name="radioGender"
+                      value="female"
                       id="flexRadioDefault3"
                     />
                     <label class="form-check-label" for="flexRadioDefault2">
@@ -193,7 +197,7 @@
                   <textarea
                     class="form-control"
                     placeholder="Leave a comment here"
-                    id="floatingTextarea2"
+                    id="modalAddress"
                     style="height: 100px"
                   ></textarea>
                   <label for="floatingTextarea2">Address</label>
@@ -206,7 +210,7 @@
                     <input
                       type="date"
                       class="form-control"
-                      id="inputPassword"
+                      id="modalBirthdate"
                     />
                   </div>
                 </div>
@@ -220,7 +224,7 @@
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary">Register</button>
+              <button id="btnModalRegister" type="button" class="btn btn-primary">Register</button>
             </div>
           </div>
         </div>
